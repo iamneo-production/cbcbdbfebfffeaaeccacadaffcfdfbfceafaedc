@@ -45,6 +45,7 @@ public class Model {
     public String getTaskStatus() {
         return taskStatus;
     }
-    
-    
+    public void setTaskStatus(String taskStatus) {
+    this.taskStatus = taskStatus;
+}
 }

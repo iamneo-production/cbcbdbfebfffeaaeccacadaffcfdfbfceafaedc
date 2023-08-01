@@ -15,7 +15,7 @@ public class AppController {
         dao.save(detail);
         return "Sucess";
     }
-    @GetMapping("/alltasks")
+    @GetMapping("/allTasks")
     List<Model> allTasks()
     {
         List<Model> all=(List<Model>) dao.findAll();
@@ -27,8 +27,8 @@ public class AppController {
         dao.deleteById(id);
     }
     @GetMapping("/getTask")
-    public Model getTask(@RequestParam int id) {
-        Model a = dao.findById(id).orElse(null);
+    public Model getTask(@RequestParam int id){
+        Model a =dao.findById(id).orElse(null);
         return a;
-    }
+}
 }
