@@ -15,7 +15,7 @@ public class AppController {
         dao.save(detail);
         return "Sucess";
     }
-    @GetMapping("/allTasks")
+    @GetMapping("/alltasks")
     List<Model> allTasks()
     {
         List<Model> all=(List<Model>) dao.findAll();
