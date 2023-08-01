@@ -9,11 +9,11 @@ import javax.persistence.Table;
 public class Model {
     @Id
  @Column  
- private int id;
+ private int taskId;
  @Column  
- private String name;
+ private String taskHolderName;
  @Column
- private String date;
+ private String taskDate;
  @Column
  private String taskName;
  @Column
